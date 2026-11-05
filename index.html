@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PDF Selector</title><link rel="stylesheet" href="./src/web/styles.css"></head>
+<body>
+<header><strong>PDF Selector</strong><label class="file-button">פתיחת PDF <input id="file" type="file" accept="application/pdf,.pdf" hidden></label><button id="previous" disabled>הקודם</button><span id="page-label">—</span><button id="next" disabled>הבא</button><button id="minus" disabled>−</button><span id="zoom-label">100%</span><button id="plus" disabled>+</button></header>
+<main><section class="viewer"><div id="page" class="page"><canvas id="canvas"></canvas><div id="overlay"></div></div><p id="hint">בחר קובץ PDF כדי להתחיל.</p></section><aside><h2>הרכיב שנבחר</h2><pre id="details">טרם נבחר רכיב</pre><button id="copy" disabled>העתקת נתונים</button><p class="note">ניסוי ראשון: זיהוי מקטעי טקסט. PDF סרוק דורש OCR; תמונות ושדות טופס ייבדקו בהמשך.</p></aside></main>
+<script type="module" src="./src/web/app.js"></script></body></html>
